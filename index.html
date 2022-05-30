@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talentu Front Test | Ángel Quiroz</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Talentu Front Test</h1>
+      <form id="addUserForm" class="form">
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Correo Electrónico"
+            required
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >Ingrese el correo electrónico del usuario</small
+          >
+        </div>
+        <!-- First Name -->
+        <div class="form-group">
+          <label for="first_name">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            name="first_name"
+            id="first_name"
+            aria-describedby="first_nameHelp"
+            placeholder="Nombre"
+            required
+          />
+          <small id="first_nameHelp" class="form-text text-muted">
+            Ingrese el nombre del usuario
+          </small>
+        </div>
+        <!-- Last Name -->
+        <div class="form-group">
+          <label for="last_name">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            name="last_name"
+            id="last_name"
+            aria-describedby="last_nameHelp"
+            placeholder="Apellido"
+            required
+          />
+          <small id="last_nameHelp" class="form-text text-muted">
+            Ingrese el apellido del usuario
+          </small>
+        </div>
+        <!-- Birthday  -->
+        <div class="form-group">
+          <label for="birthday">Fecha de Nacimiento</label>
+          <input
+            type="date"
+            class="form-control"
+            name="birthday"
+            id="birthday"
+            aria-describedby="birthdayHelp"
+            placeholder="Fecha de Nacimiento"
+            required
+          />
+          <small id="birthdayHelp" class="form-text text-muted">
+            Ingrese la fecha de nacimiento del usuario
+          </small>
+        </div>
+        <button type="submit"><i class="fas fa-plus"></i> Agregar</button>
+      </form>
+      <div class="table-responsive">
+        <div class="buttons">
+          <button id="refreshButton">Refrescar</button>
+        </div>
+        <table id="usersTable"></table>
+      </div>
+      <footer>
+        <p>Talentu Front Test | Ángel Quiroz</p>
+      </footer>
+    </div>
+    <script src="js/main.js" defer type="module"></script>
+  </body>
+</html>
